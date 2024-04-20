@@ -1,0 +1,22 @@
+.content{
+    /* width: 50vw; */
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.text{
+    text-align: center;
+
+}
+
+p:first-child{
+    margin-bottom: -20px;
+}
+
+img {
+    max-width: 100%; 
+    height: auto; 
+    /* margin-top: 20px;  */
+}
