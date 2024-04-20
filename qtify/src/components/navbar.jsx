@@ -1,18 +1,25 @@
 import React from "react";
+import { useRef, useEffect } from "react";
 import './navbar.css';
 import { Box } from "@mui/material";
 import logo from "../assets/logo.png"
 import {ReactComponent as SearchIcon} from "../assets/search-icon.svg"
 
 
-
 export default function Navbar(){
+
+    const inputRef = useRef();
+
+    useEffect(() => {
+    inputRef.current.focus();
+    }, [])
+
     return(
         <>
             <Box
             sx={{
                 background: "rgba(52, 201,75, 1)",
-                // width: "100vw",
+                width: "100vw",
                 height: "70px",
                 display: "flex",
                 alignItems: "center"
@@ -25,6 +32,7 @@ export default function Navbar(){
                     </div>
                     <div style={{ display: 'flex', alignItems: 'center' }}>
                         <input 
+                        ref={inputRef}
                         type="search" 
                         name="search" 
                         className="search" 

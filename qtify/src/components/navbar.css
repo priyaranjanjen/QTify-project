@@ -4,6 +4,7 @@
 }
 
 .search{
+    
     Width: 28vw;
     Height: 48px;
     border: 1px solid black;
@@ -15,6 +16,11 @@
     padding-left: 15px;
 
 }
+
+.search::-webkit-search-cancel-button {
+    display: none;
+  }
+  
 
 .searchIcon{
     background: white;

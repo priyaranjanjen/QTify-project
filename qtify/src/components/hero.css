@@ -2,21 +2,23 @@
     /* width: 50vw; */
     display: flex;
     align-items: center;
-    font-size: 35px;
-    font-weight: 600;
+
 }
 
 .text{
     text-align: center;
+    font-size: 2vw;
+    font-weight: 600;
 
 }
 
-p:first-child{
-    margin-bottom: -20px;
+p{
+    margin: 2px;
 }
 
 img {
-    max-width: 100%; 
+    max-width: 100%;
+    width: 27vw; 
     height: auto; 
     /* margin-top: 20px;  */
 }
