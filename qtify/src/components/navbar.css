@@ -47,6 +47,9 @@
     padding: 16px 16px 16px 16px;
     font-weight: 600;
     font-size: 16px;
-    font-family: 'poppins',sans-serif;
+    font-family: 'Poppins',sans-serif;
+}
+
+.button:hover{
     cursor: pointer;
 }
