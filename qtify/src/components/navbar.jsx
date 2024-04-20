@@ -4,7 +4,7 @@ import './navbar.css';
 import { Box } from "@mui/material";
 import logo from "../assets/logo.png"
 import {ReactComponent as SearchIcon} from "../assets/search-icon.svg"
-
+import Button from "./button";
 
 export default function Navbar(){
 
@@ -41,9 +41,8 @@ export default function Navbar(){
                         {/* <img src={searchIcon} alt="search" className="searchIcon"></img> */}
                         <SearchIcon className='searchIcon'/>
                     </div>
-                    <button className="button">
-                        Give Feedback
-                    </button>
+                    <Button/>
+                  
                 </Box>
             </Box>
         </>
