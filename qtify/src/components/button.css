@@ -6,8 +6,9 @@
     font-weight: 600;
     font-size: 16px;
     font-family: 'Poppins',sans-serif;
-}
-
-.button:hover{
     cursor: pointer;
 }
+
+/* .button:hover{
+    cursor: pointer;
+} */
