@@ -1,0 +1,17 @@
+.card-body{
+    max-width: fit-content;
+    margin-bottom: 20px;
+}
+
+.card{
+    max-width: 345px;
+    width: 200px;
+    position: relative;
+    /* margin: 20px; */
+    border-radius: 10px;
+}
+
+.image{
+    height: 200px;
+}
+
