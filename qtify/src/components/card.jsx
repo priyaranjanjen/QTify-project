@@ -7,36 +7,34 @@ import './card.css'
 export default function Cards({card}) {
 
   return (
-    <div className='card-body'>  
+    <>
+      <div className='card-body'>  
         {/* {console.log(card)} */}
 
         <Card className='card'>
-        <CardActionArea>
+          <CardActionArea>
             <CardMedia
-            className='card-image'
-            component="img"
-            // height="50px"
-            image= {card.image}
-            alt={card.title}
+              className='card-image'
+              component="img"
+              // height="50px"
+              image= {card.image}
+              alt={card.title}
             />
-            <div className='text'>
-            <Typography variant="h6">
-            </Typography>
-            </div>
             <CardContent>
-
-            <Chip label={`${card.follows} follows`} sx={{background:'black', color:'white'}}/>
-
+              <Chip label={`${card.follows} follows`} sx={{background:'black', color:'white'}}/>
             </CardContent>
-        </CardActionArea>
+          </CardActionArea>
         </Card>
-        <Typography variant="h5" 
-        sx={{
-            color: "white",
-            textAlign: "center"
-        }}>
-            {card.title}
-        </Typography>
-    </div>
+      </div>
+      <Typography variant="h5" 
+      sx={{
+          color: "white",
+          textAlign: "center"
+      }}>
+          {card.title}
+      </Typography>
+    </>
+     
   );
 }
+

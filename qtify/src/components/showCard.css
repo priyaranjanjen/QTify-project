@@ -24,11 +24,4 @@
     
 }
 
-.slick-slide > div{
-    margin: 0 10px;
-}
-
-.slick-next:before{
-    content: none !important;
-}
   
