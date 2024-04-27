@@ -21,7 +21,6 @@ export default function Cards({card}) {
             />
             <div className='text'>
             <Typography variant="h6">
-                {card.title}
             </Typography>
             </div>
             <CardContent>
@@ -36,7 +35,7 @@ export default function Cards({card}) {
             color: "white",
             textAlign: "center"
         }}>
-            new hindi song
+            {card.title}
         </Typography>
     </div>
   );

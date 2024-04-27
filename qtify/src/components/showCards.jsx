@@ -53,11 +53,17 @@ function Responsive({cardData}) {
   }
 
 
-export default function RenderCards(){
+export default function RenderCards({text}){
     const [cardData, setCardData] = useState([]);
     const [collapse, setCollapse] = useState(true);
 
-    const url = "https://qtify-backend-labs.crio.do/albums/top"
+    let url;
+
+    if(text === "Top Albums"){
+        url = "https://qtify-backend-labs.crio.do/albums/top";
+    }else if(text === "New Albums"){
+        url = "https://qtify-backend-labs.crio.do/albums/new";
+    }
 
     const fetchCardData = async(url) =>{
         try {
@@ -75,13 +81,13 @@ export default function RenderCards(){
 
       fetchCardData(url);
 
-    }, [])
+    }, [url])
     
     return(
     <>
         <div className="card-container">
             <div className="accordian"> 
-                Top Albums
+                {text} 
 
                 {collapse? (
                     <span 

@@ -10,8 +10,10 @@ function App() {
     <>
       <Navbar/>
       <HeroBackground/>
+      <RenderCards text={"Top Albums"}/>
+      <RenderCards text={"New Albums"}/>
       <hr/>
-      <RenderCards/>
+
     </>
   );
 }
