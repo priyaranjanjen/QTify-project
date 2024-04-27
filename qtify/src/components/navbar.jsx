@@ -19,7 +19,7 @@ export default function Navbar(){
             <Box
             sx={{
                 background: "rgba(52, 201,75, 1)",
-                width: "100vw",
+                // width: "100vw",
                 height: "70px",
                 display: "flex",
                 alignItems: "center"

@@ -13,7 +13,7 @@ export default function Cards({card}) {
         <Card className='card'>
         <CardActionArea>
             <CardMedia
-            className='image'
+            className='card-image'
             component="img"
             // height="50px"
             image= {card.image}
@@ -26,7 +26,7 @@ export default function Cards({card}) {
             </div>
             <CardContent>
 
-            <Chip label={`${card.follows} follows`} />
+            <Chip label={`${card.follows} follows`} sx={{background:'black', color:'white'}}/>
 
             </CardContent>
         </CardActionArea>
@@ -34,7 +34,6 @@ export default function Cards({card}) {
         <Typography variant="h5" 
         sx={{
             color: "white",
-            // margin: "32px",
             textAlign: "center"
         }}>
             new hindi song

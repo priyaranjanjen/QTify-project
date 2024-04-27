@@ -11,7 +11,7 @@ export default function HeroBackground(){
             sx={{
                 display: "flex",
                 justifyContent: "center",
-                width: "100vw",
+                // width: "100vw",
                 height: "30%",
                 color: "white"
             }}>

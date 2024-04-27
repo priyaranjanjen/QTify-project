@@ -1,4 +1,4 @@
-.show-card{
+.card-container{
     margin: 32px;
 
 }
@@ -14,7 +14,21 @@
     color: white;
 }
 
-.show-all{
+.show-all-button{
     color: #34C94B;
     cursor: pointer;
 }
+
+.show-cards{
+    margin: 48px 12px
+    
+}
+
+.slick-slide > div{
+    margin: 0 10px;
+}
+
+.slick-next:before{
+    content: none !important;
+}
+  
