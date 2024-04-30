@@ -4,7 +4,9 @@ import { Card, CardActionArea, CardMedia, Typography, CardContent, Chip } from '
 // import image from '../assets/hero_headphones.png';
 import './card.css'
 
-export default function Cards({card}) {
+export default function Cards({card, type}) {
+
+  console.log(card)
 
   return (
     <>
@@ -12,7 +14,7 @@ export default function Cards({card}) {
         {/* {console.log(card)} */}
 
         <Card className='card'>
-          <CardActionArea>
+          <CardActionArea >
             <CardMedia
               className='card-image'
               component="img"
@@ -21,7 +23,12 @@ export default function Cards({card}) {
               alt={card.title}
             />
             <CardContent>
+            {type === "Songs"?(
+                <Chip label={`${card.likes} likes`} sx={{background:'black', color:'white'}}/>
+              ):(
               <Chip label={`${card.follows} follows`} sx={{background:'black', color:'white'}}/>
+              )
+              }
             </CardContent>
           </CardActionArea>
         </Card>
